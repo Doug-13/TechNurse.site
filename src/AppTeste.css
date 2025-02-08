@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Reset básico */
+body, h1, h2, p, label, input, textarea, table, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1e88e5;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #555;
+}
+
+input, textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #1e88e5;
+  outline: none;
+  background: #ffffff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+h4 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+/* Estilo da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead th {
+  background: #1e88e5;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  font-weight: 600;
+}
+
+tbody td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tbody td input {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  background: #f9f9f9;
+  font-size: 14px;
+}
+
+tbody td input:focus {
+  background: #ffffff;
+}
+
+/* Estilo do botão */
+button {
+  padding: 10px 15px;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+button:active {
+  background: #0d47a1;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.image-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.image-preview img {
+  max-width: 100%; /* Limita a largura da imagem ao contêiner */
+  max-height: 400px; /* Define uma altura máxima */
+  border: 1px solid #ccc; /* Adiciona uma borda leve */
+  border-radius: 8px; /* Bordas arredondadas */
+  object-fit: contain; /* Mantém o aspecto da imagem */
+  padding: 5px; /* Espaço entre a borda e a imagem */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
